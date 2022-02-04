@@ -1,5 +1,3 @@
-https://ornelas91.github.io/calculoImc/
-
 
 # Getting Started with Create React App
 
