@@ -18,8 +18,9 @@ export default function App(){
     }else if(imc >= 24.9 && imc < 34.9) {
       setMensagem("Você está levemente acima do peso ! Seu IMC é: " + imc.toFixed(2))
     }else if(imc >= 34.9) {
-      setMensagem("Cuidado Obesidade ! ! Seu IMC é: " + imc.toFixed(2))
+      setMensagem("Cuidado Obesidade ! Seu IMC é: " + imc.toFixed(2))
     }
+    document.getElementById(altura).reset();
   }
 
   return(
@@ -31,7 +32,7 @@ export default function App(){
       <h2>Calcule seu Imc !</h2>
         <div className='area-caixa'>
           <lavel>Peso - Kg</lavel>
-          <input type="text" placeholder="Kg" value={peso} 
+          <input id='form1' type="text" placeholder="Kg" value={peso} 
             onChange={(e) => setPeso(e.target.value)}
           />
           <lavel>Altura - Cm</lavel>
