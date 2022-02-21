@@ -23,6 +23,10 @@ span {
     margin: 12px 0;
 }
 
+.text {
+    color: #FFF;
+}
+
 .area-input {
     display: flex;
     flex-direction: column;
